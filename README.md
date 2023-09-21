@@ -44,6 +44,7 @@ b. Run the game using: java Main
 |-----------------|
 |  O  |  8  |  9  |
 |-----|-----|-----|
+
 Computer won! Thanks for playing.
 Want to play again (y/n)?
 
