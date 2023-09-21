@@ -45,11 +45,15 @@ public class Main {
                 break;} else if (ctr == 8) {
                 return "draw";}}
         // To enter the X Or O at the exact place on board.
-        if (turn.equals("X")) {System.out.println(
+        if (turn.equals("X")) {
+            System.out.println(
                     turn + "'s turn; enter a slot number to place "
-                            + turn + " in:");}
+                            + turn + " in:");
+        }
         else
-        { System.out.println("Computer has played the move and placed \"O\"");}
+        {
+            System.out.println("Computer has played the move and placed \"O\"");
+        }
         return null;}
 
     // To print out the board.
@@ -96,7 +100,9 @@ public class Main {
                 // numInput will take input from user like from 1 to 9.
                 // If it is not in range from 1 to 9.
                 // then it will show you an error, eg "Invalid input."
-		    {if (turn.equals("O")) {
+
+
+                {if (turn.equals("O")) {
                     /*
                       Winning moves
                      */
@@ -319,8 +325,9 @@ Defending moves
                             numInput=2;}
                         //new moves
                         else if  (board[0].equals("X") && !board[1].equals("X") && board[2].equals("X") && !board[3].equals("X") && !board[4].equals("X") && !board[5].equals("X") && !board[6].equals("X") && board[7].equals("X") && !board[8].equals("X") && !board[0].equals("O") && board[1].equals("O") && !board[2].equals("O") && !board[3].equals("O") && board[4].equals("O") && !board[5].equals("O") && !board[6].equals("O") && !board[7].equals("O") && !board[8].equals("O")) {
-                            numInput=4;}} 
-		else {//in = new Scanner(System.in);
+                            numInput=4;}
+                    } else {
+                        //in = new Scanner(System.in);
                         try {
                             numInput=in.nextInt();} catch (InputMismatchException e) {
                             System.out.println("Input is not INT, please re-enter slot number:");
@@ -337,32 +344,45 @@ Defending moves
 
                         if (String.valueOf(numInput).length() != 1) {
                             System.out.println("Please enter 1 digit number only, please re-enter slot number:");
-                            continue;}}}
+                            continue;
+                        }}}
                 // This game has two player X and O (Computer).
+
                 //if (turn.equals("O")) {
                     if (board[numInput - 1].equals(
                             String.valueOf(numInput))) {
                         board[numInput - 1]=turn;
+
                         if (turn.equals("X")) {
-                            turn="O";} else {
-                            turn="X";}
+                            turn="O";
+                        } else {
+                            turn="X";
+                        }
                         printBoard();
-                        winner=checkWinner(); } else {
+                        winner=checkWinner();
+                    } else {
                         System.out.println("Slot already taken, please re-enter slot number....");}
-                //}/*in.close();*/}
+                //}
+                 /*in.close();*/}
 
             // If no one win or lose from both player X and O.
             // then here is the logic to print "draw".
             if (winner.equalsIgnoreCase("draw")) {
                 System.out.println("It's a draw! Thanks for playing.");}
+
             // For winner -to display Congratulations! message.
             else if (winner.equalsIgnoreCase("O")) {
                 System.out.println("Computer won! Thanks for playing.");} else if (winner.equalsIgnoreCase("X")) {
                 System.out.println("Congratulations! You have won! Thanks for playing.");}
+
             System.out.println("Want to play again (y/n)?");
             in2 = new Scanner(System.in);
+
             again = in2.nextLine();
             while (!again.equalsIgnoreCase("y") && !again.equalsIgnoreCase("n"))
-            {System.out.println("Please enter either \"y\" or \"n\" only (case-insensitive)");
-                again = in2.nextLine();}} while (again.equalsIgnoreCase("y"));
+            {
+                System.out.println("Please enter either \"y\" or \"n\" only (case-insensitive)");
+                again = in2.nextLine();}
+
+        } while (again.equalsIgnoreCase("y"));
         in2.close();}}
