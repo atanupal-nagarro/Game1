@@ -39,15 +39,15 @@ b. Run the game using: java Main
 
 |-----|-----|-----|
 
-|  X  |  X  |  O  |
+|   X   |   X   |   O   |
 
 |-----------------|
 
-|  X  |  O  |  6  |
+|   X   |   O   |   6   |
 
 |-----------------|
 
-|  O  |  8  |  9  |
+|   O   |   8   |   9   |
 
 |-----|-----|-----|
 
@@ -55,17 +55,18 @@ Computer won! Thanks for playing.
 Want to play again (y/n)?
 
 2. Draw Case: Both computer and You do not win, it’s a draw.
+
 |-----|-----|-----|
 
-|  X  |  O  |  X  |
+|   X   |   O   |   X   |
 
 |-----------------|
 
-|  X  |  O  |  O  |
+|   X   |   O   |   O   |
 
 |-----------------|
 
-|  O  |  X  |  X  |
+|   O   |   X   |   X   |
 
 |-----|-----|-----|
 
