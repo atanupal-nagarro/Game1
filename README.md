@@ -36,7 +36,7 @@ b. Run the game using: java Main
 
 **Game Screenshots**
 1. Computer Win Case:
-
+'''json
 |-----|-----|-----|
 
 |   X   |   X   |   O   |
@@ -51,10 +51,14 @@ b. Run the game using: java Main
 
 |-----|-----|-----|
 
+'''
+
 Computer won! Thanks for playing.
 Want to play again (y/n)?
 
 2. Draw Case: Both computer and You do not win, it’s a draw.
+
+'''json
 
 |-----|-----|-----|
 
@@ -69,6 +73,8 @@ Want to play again (y/n)?
 |   O   |   X   |   X   |
 
 |-----|-----|-----|
+
+'''
 
 It's a draw! Thanks for playing.
 Want to play again (y/n)?
