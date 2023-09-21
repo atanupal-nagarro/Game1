@@ -382,7 +382,5 @@ Defending moves
             while (!again.equalsIgnoreCase("y") && !again.equalsIgnoreCase("n"))
             {
                 System.out.println("Please enter either \"y\" or \"n\" only (case-insensitive)");
-                again = in2.nextLine();}
-
-        } while (again.equalsIgnoreCase("y"));
+                again = in2.nextLine();}} while (again.equalsIgnoreCase("y"));
         in2.close();}}
