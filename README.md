@@ -38,11 +38,17 @@ b. Run the game using: java Main
 1. Computer Win Case:
 
 |-----|-----|-----|
+
 |  X  |  X  |  O  |
+
 |-----------------|
+
 |  X  |  O  |  6  |
+
 |-----------------|
+
 |  O  |  8  |  9  |
+
 |-----|-----|-----|
 
 Computer won! Thanks for playing.
@@ -50,12 +56,19 @@ Want to play again (y/n)?
 
 2. Draw Case: Both computer and You do not win, it’s a draw.
 |-----|-----|-----|
+
 |  X  |  O  |  X  |
+
 |-----------------|
+
 |  X  |  O  |  O  |
+
 |-----------------|
+
 |  O  |  X  |  X  |
+
 |-----|-----|-----|
+
 It's a draw! Thanks for playing.
 Want to play again (y/n)?
 
